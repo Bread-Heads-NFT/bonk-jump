@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
+    "@breadheads/bgl-game-pot": "^0.1.0",
+    "@metaplex-foundation/umi": "^0.8.2",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.8.2",
+    "@solana/web3.js": "^1.95.4",
     "interpolation-buffer": "^1.2.5",
     "phaser": "^3.55.2",
     "phaser3-rex-plugins": "^1.1.69"

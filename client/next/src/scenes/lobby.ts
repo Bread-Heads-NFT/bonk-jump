@@ -1,18 +1,16 @@
-import { HathoraClient } from "../../../.hathora/client";
-import { VIEWPORT_HEIGHT, VIEWPORT_WIDTH } from "../utils";
+import { HathoraClient } from "../../../.hathoraFix/client";
 import InputText from "phaser3-rex-plugins/plugins/inputtext.js";
-import { MAP_WIDTH, MAP_HEIGHT } from "../../../../shared/constants";
-import backgroundUrl from "../assets/lobby.png";
+import { DEFAULT_HEIGHT, DEFAULT_WIDTH } from "@/components/Game";
 
 export class LobbyScene extends Phaser.Scene {
   preload() {
-    this.load.image("background", backgroundUrl);
+    this.load.image("background", "assets/lobby.png");
   }
 
   create() {
-    this.add.sprite(0, 0, "background").setOrigin(0, 0).setDisplaySize(VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
+    this.add.sprite(0, 0, "background").setOrigin(0, 0).setDisplaySize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
     const createButton = this.add
-      .text(VIEWPORT_WIDTH / 2, VIEWPORT_HEIGHT / 4, "Create New Game", {
+      .text(DEFAULT_WIDTH / 2, DEFAULT_HEIGHT / 4, "Create New Game", {
         fontSize: "20px",
         fontFamily: "futura",
       })
@@ -36,7 +34,7 @@ export class LobbyScene extends Phaser.Scene {
       });
 
     const joinButton = this.add
-      .text(VIEWPORT_WIDTH / 2, (VIEWPORT_HEIGHT * 3) / 4, "Join Existing Game", {
+      .text(DEFAULT_WIDTH / 2, (DEFAULT_HEIGHT * 3) / 4, "Join Existing Game", {
         fontSize: "20px",
         fontFamily: "futura",
       })

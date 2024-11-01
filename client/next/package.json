@@ -1,0 +1,44 @@
+{
+  "name": "solana-phaser-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next dev -p 3001",
+    "prod": "next build && next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@metaplex-foundation/umi": "^0.8.2",
+    "@breadheads/bgl-game-pot": "^0.1.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.8.2",
+    "@metaplex-foundation/umi-signer-wallet-adapters": "^0.8.2",
+    "@metaplex-foundation/mpl-toolbox": "^0.9.4",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
+    "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/web3.js": "^1.91.8",
+    "@tiplink/wallet-adapter": "^2.1.21",
+    "@tiplink/wallet-adapter-react-ui": "^1.0.0",
+    "next": "14.2.3",
+    "phaser": "^3.85.2",
+    "interpolation-buffer": "^1.2.5",
+    "phaser3-rex-plugins": "^1.1.69",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "14",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@8.15.9"
+}
